@@ -1,0 +1,12 @@
+{
+    "name": "babekylie",
+    "version": "1.0.0",
+    "main": "netlify/functions/create-order.js",
+    "scripts": {
+      "start": "netlify dev"
+    },
+    "dependencies": {
+      "node-fetch": "^2.6.1"
+    }
+  }
+  

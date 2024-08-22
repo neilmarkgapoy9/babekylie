@@ -1,0 +1,13 @@
+# Prevent direct access to images and videos
+<FilesMatch "\.(jpg|jpeg|png|gif|mp4|webm|avi)$">
+    Order Allow,Deny
+    Deny from all
+    Allow from https://incredible-meerkat-fbac89.netlify.app
+</FilesMatch>
+
+# Prevent hotlinking
+RewriteEngine On
+RewriteCond %{HTTP_REFERER} !^https?://(www\.)?yourwebsite\.com [NC]
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule \.(jpg|jpeg|png|gif|mp4|webm|avi)$ - [F,NC]
+Options -Indexes

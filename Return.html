@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Purchase!</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #030500;
+            color: #333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0;
+        }
+        .container {
+            background-color: #7eaed9;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            margin: 0 10px; /* Added margin for all sides */
+        }
+        .message, .order-details {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f1f8e9;
+            border-left: 6px solid #212529;
+            border-radius: 6px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .order-details h2 {
+            margin-top: 0;
+            color: #142736;
+            font-size: 1.5em;
+        }
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px 5px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #142736;
+            border-radius: 8px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #333;
+            color: #fff;
+            font-size: 0.9em;
+            border-top: 1px solid #444;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px; /* Margin for medium screens */
+            }
+            .message, .order-details {
+                padding: 15px;
+                font-size: 1em;
+                margin: 15px 0; /* Margin for medium screens */
+            }
+            .order-details h2 {
+                font-size: 1.3em;
+            }
+            .button {
+                padding: 12px 25px;
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 15px;
+                margin: 15px; /* Increased margin for smaller screens */
+            }
+            .message, .order-details {
+                padding: 10px;
+                font-size: 0.9em;
+                margin: 10px 0; /* Margin for smaller screens */
+            }
+            .order-details h2 {
+                font-size: 1.2em;
+            }
+            .button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="display-4 text-light">Thank You for Your Purchase!</h1>
+        <div class="message">
+            <p>Your payment has been successfully processed. A receipt for your purchase has been emailed to you. Log in to your PayPal account to view your transaction details.</p>
+        </div>
+        
+        <div class="order-details">
+            <h2>Order Summary</h2>
+            <p><strong>Product:</strong> 1 Set (5 Videos + 30 Pics)</p>
+            <p><strong>Price:</strong> $100 USD</p>
+            <p><strong>Order Status:</strong> Confirmed</p>
+            <a href="gallery.html" class="button btn">Proceed to Exclusive Content 😈</a>
+        </div>
+        
+        <p>If you have any questions or need further assistance, please feel free to <a href="mailto:bab3kylie@gmail.com" class="text-primary">contact us</a>.</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

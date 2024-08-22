@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Payment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Select an Amount to Pay</h2>
+        <div class="checkbox-group">
+            <label>
+                <input type="radio" name="amount" value="100" data-server-amount="100"> $100
+            </label>
+            <label>
+                <input type="radio" name="amount" value="190" data-server-amount="190"> $190
+            </label>
+            <label>
+                <input type="radio" name="amount" value="270" data-server-amount="270"> $270
+            </label>
+        </div>
+        <div id="amount-display" class="hidden">Amount selected: $<span id="selected-amount"></span></div>
+        <div id="paypal-button-container" class="hidden"></div>
+    </div>
+    <script src="https://www.paypal.com/sdk/js?client-id=AcTTyWmfO8MfQUd7T3_qKLQ-Dq-81SeCCRSLwZx1NN0BiB5uJ0jSCFjJ3VyRn_yrqcpjKfGI-KWae0Fx"></script>
+    <script src="payment.js"></script>
+</body>
+</html>

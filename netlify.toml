@@ -1,0 +1,7 @@
+[build]
+  publish = "public"
+  functions = "netlify/functions"
+
+[build.environment]
+  PAYPAL_CLIENT_ID = "YAcTTyWmfO8MfQUd7T3_qKLQ-Dq-81SeCCRSLwZx1NN0BiB5uJ0jSCFjJ3VyRn_yrqcpjKfGI-KWae0Fx"
+  PAYPAL_CLIENT_SECRET = "EBwIGofiMu57qav4RcuGzeNMDfq8iAl3-xJZOUtfRs_BLfWEeUj-RGkdKHR-oCeJpGTSdf6Y0GEPicQ"

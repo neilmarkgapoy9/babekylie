@@ -1,0 +1,189 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(45deg, #030500, #030500);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#preloader {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #142736; /* Dark background to match your design */
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999; /* Ensure it’s on top of everything else */
+opacity: 1; /* Start with full opacity */
+transition: opacity 0.4s ease-out; /* Smooth fade-out transition */
+}
+
+#preloader img {
+width: 300px; /* Adjust size as needed */
+height: auto; /* Maintain aspect ratio */
+}
+
+#preloader.fade-out {
+opacity: 0; /* Fade out to fully transparent */
+}
+
+
+.profile-header-content {
+    text-align: center;
+    padding-bottom: 0;
+    position: relative;
+}
+.cover-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px 25px 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.profile-img-container {
+    position: relative;
+    display: inline-block;
+    top: 80px;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    object-fit: cover;
+    background: white;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+.fa-play {
+    position: absolute;
+    opacity: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+.card-img-top {
+    display: none; /* Hides the cover photo in card-img-top */
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+.social-icons a {
+    font-size: 1.5rem;
+    color: #142736;
+}
+.social-icons a:hover {
+    color: white; /* Change to a different color on hover */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+    animation: glow-animation 1.5s infinite alternate;
+}
+@keyframes glow-animation {
+    from {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 15px rgba(255, 255, 255, 0.4);
+    }
+    to {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 45px rgba(255, 255, 255, 0.6);
+    }
+}
+.btn-custom {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.btn-custom:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    color:white;
+}
+.btn-custom .btn-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 10px;
+}
+.btn-custom img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+.btn-alua { background-color: #142736; }
+.btn-fancentro { background-color: #440807; position: relative; }
+.sub-btn-custom::after {
+    content: "HOT";
+    position: absolute;
+    top: -10px;
+    right: -20px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    animation: glow 1s infinite alternate;
+}
+@keyframes glow { from { box-shadow: 0 0 5px red; } to { box-shadow: 0 0 20px red; } }
+.btn-loyalfans { background-color: #750906; }
+.btn-imfan { background-color: #C11006; color: white; }
+.card { background-color: #52718D; border-radius: 25px; position: relative; margin-bottom: 50px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); }
+.card-body { padding-top: 50px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); } /* Adjusted padding to account for profile picture overlap */
+.sub-btn-custom {
+    position: relative;
+    opacity: 80%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8px;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: #3B0A45; /* Sub button color */
+}
+.sub-btn-custom:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+.sub-btn-custom .btn-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 10px;
+}
+.sub-btn-custom img {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+@media (min-width: 768px) {
+    .card { max-width: 500px; margin: 0 auto; }
+}
